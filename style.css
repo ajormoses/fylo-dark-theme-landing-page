@@ -64,6 +64,13 @@ header {
   align-items: center;
 }
 
+ul.menu {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
 .menu li a {
   list-style-type: none;
   color: rgb(219, 219, 219);
