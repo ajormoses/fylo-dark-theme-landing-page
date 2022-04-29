@@ -24,6 +24,7 @@ three.addEventListener("click", () => {
 // function to validate one, two, three event
 function trans(element) {
   element.style.transition = "0.3s";
+  // setTimeout(element, 5000);
 }
 
 // fylo styling using onmouseover event
@@ -76,4 +77,9 @@ function error(element, msg) {
 
 function success(element) {
   element.style.border = "2px solid hsl(176, 68%, 64%)";
+  const parent = element.parentElement;
+  const p = parent.querySelector(".text");
+  const m = parent.querySelector(".text-ig");
+  m.innerHTML = "";
+  p.innerHTML = "";
 }
