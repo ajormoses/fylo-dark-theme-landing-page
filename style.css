@@ -195,13 +195,24 @@ section {
   padding-left: 8px;
 }
 
-.arrowtwo {
+.arrowone {
   display: none;
-  padding-bottom: 5px;
 }
 
 .fylo-works p {
   color: var(--Cyan-inside-call-to-action-gradient);
+}
+
+.fylo-works:hover p {
+  color: var(--White);
+}
+
+.fylo-works:hover {
+  border-color: transparent transparent var(--White) transparent;
+}
+
+.fylo-works:hover svg {
+  filter: sepia() hue-rotate(200deg);
 }
 
 .third-section {

@@ -1,7 +1,6 @@
 const btn = document.querySelectorAll(".btn");
 const email = document.querySelector("#email");
 var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-const fylo = document.querySelector(".fylo-works");
 const one = document.querySelector("#list-one");
 const two = document.querySelector("#list-two");
 const three = document.querySelector("#list-three");
@@ -25,23 +24,6 @@ three.addEventListener("click", () => {
 function trans(element) {
   element.style.transition = "0.3s";
   // setTimeout(element, 5000);
-}
-
-// fylo styling using onmouseover event
-fylo.addEventListener("mouseover", (e) => {
-  e.preventDefault();
-  effect(fylo);
-});
-
-// effect function on fylo
-function effect(element) {
-  element.style.borderColor = "transparent transparent white transparent";
-  const p = element.querySelector("p");
-  p.style.color = "white";
-  const y = element.querySelector("img");
-  const z = element.querySelector("svg");
-  y.style.display = "none";
-  z.style.display = "block";
 }
 
 // Email validation
